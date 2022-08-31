@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- bootstrpa css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style type="text/css">
+            /* h1{
+                padding:20px;
+                color:white;
+                background-color:red;
+                font-size:60px;
+            } */
+            /* p{
+                text-align:center;
+                padding:80;
+                background-color:black;
+                font-size:50;
+                color:white;
+
+            } */
+            #p1{
+                text-align:left;
+                color:green;
+            }
+            .cent{
+                text-align:center;
+                color:orange;
+            }
+            *{
+                text-align:center;
+                font-size:50x;
+                /* color:red; */
+            }
+            /* h3,h4,h5{
+                text-align:right;
+                font-size:10px;
+                background-color:red;
+            } */
+            .hov{
+                font-size:80;
+                background-color:cyan;
+            }
+            .hov:hover{
+                background-color:black;
+                color:white;
+            }
+            .act{
+                background-color:white;
+            }
+            .act a:active{
+                color:green;
+            }
+            .act a:visited{
+                color:red;
+            }
+            #visit{
+                background-color:white;
+                text-align:center;
+            }
+            #visited a:visited{
+                color:red;
+            }
+            p:lang(fr){
+                color:green;
+            }
+            input:focus{
+                border:10px solid;
+            }
+            /* h3:first-child{
+                color:red;
+            } */
+            /* h3:nth-child(4){
+                color:red;
+            } */
+            /* h3:nth-child(2n){
+                color:red;
+            } */
+            h3:nth-child(2n+1){
+                color:cyan;
+            }
+            body{
+                text-align:center;
+            }
+            /* h1{
+                color:blue;
+            } */
+            /* h1::first-letter{
+                font-family:Lucida Calligraphy;
+                font-size:3cm;
+                color:red;
+                text-shadow:5px 8px 9px;
+            } */
+            /* h1::first-line{
+                font-family:Lucidia Calligraphy;
+                font-size:1cm;
+                color:red;
+                text-shadow:5px 8px 9px;
+            } */
+            /* h1::before{
+                content:"hello all";
+                color:red;
+            } */
+            /* h1{
+                color:blue;
+            }
+            h1::after{
+                content:"bye friends";
+                color:cyan;
+            }
+             */
+
+             /* selcetion */
+
+
+             /* h1::selection{
+                color:red;
+                background-color:yellow;
+             } */
+             /* h1{
+                color:blue;
+             } */
+             #arrow{
+                margin:0 auto;
+                position:relative;
+                height:0;
+                width:0;
+                border-top:10px solid transparent;
+                border-right:10px solid red;
+                transform:rotate(10deg);
+
+             }
+             #arrow::after{
+                content:"";
+                position:absolute;
+                border:0 transparent;
+                border-top:3px solid red;
+                border-radius:20px 0 0;
+                top:-12px;
+                left:-9px;
+                width:12px;
+                height:12px;
+                transform:rotate(45deg);
+             }
+
+             /* sibling selector */
+
+             /* h1~p{
+                color:blue;
+             } */
+
+
+             /* adjacent selector */
+
+             /* h1 + p{
+                color:black;
+             } */
+
+             /* child selector */
+             /* body > p{
+                color:red;
+             } */
+              /* descendent selcetor */
+              /* body  p{
+                color: yellow;
+              }
+              body{
+                color:green;
+              } */
+              /* nth child selector */
+              /* p:nth-child(even){
+                color:blue;
+                text-align:center;
+              }
+              p:nth-child(odd){
+                color:red;
+              } */
+              /* nth chid using functions */
+              /* p:nth-child(2n+1){
+                color:black;
+              } */
+              /* first child and lastchid */
+              /* p:first-child{
+                color:yellow;
+              } */
+              /* p:last-child{
+                color:green;
+              } */
+              p{
+                background:red;
+                color:white;
+              }
+              body{
+                background-image: url('download.jpeg');
+                background-size:100px;
+                background-position: top;
+                background-position:bottom;
+                background-repeat: repeat-x;
+                background-repeat:repeat-y;
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                /* background-attachment: scroll; */
+              }
+         
+
+
+        </style>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+    <!-- <h1> sibling selector</h1> -->
+    <p>this is sibling css </p>
+    <p>this is sibling css </p>
+    <!-- <p>this is sibling css </p>
+    <p>this is sibling css </p>
+    <p>this is sibling css </p> -->
+    <!-- <p>this is sibling css </p> -->
+    <!-- <div>
+        
+       <p>this is arrow bharahbjhjn nb  bbbnmbzbbdhgjhjhs  sdhsd sdjsbshbds.</p> 
+    </div> -->
+    <!-- <p>this is sibling css   last </p> -->
+
+    <!-- <p>this is sibling css </p>
+    <p>this is sibling css </p>
+    <p>this is sibling css </p>
+    <div>
+       <p>this is arrow bharahbjhjn nb  bbbnmbzbbdhgjhjhs  sdhsd sdjsbshbds.</p> 
+    </div>
+    <p>this is sibling css </p> -->
+    
+    <!-- <div id="arrow"></div> -->
+    <!-- this is about pseudo element firts letter -->
+<!-- <h1>Welcome to ecampus. this is a product based company. it is in noida 62.</h1>
+<p>this is test paragraph</p> -->
+
+    <!-- firstchild -->
+<!-- <h3>this is h3 tag</h3>
+<h3>this is h3 tag</h3>
+<h3>this is h3 tag</h3>
+<h3>this is h3 tag</h3> -->
+
+        <!-- this section explains about focus and unfocus state -->
+        <!-- <input type="text" name="name" placeholder="name"> -->
+
+    <!-- lang attributes -->
+    <!-- <p>this is without lang</p>
+    <p lang="fr">this is with lang</p> -->
+
+    <!-- this section explains about active and visited state -->
+    <!-- <div class="act">
+        <a href="http://127.0.0.1:8000/thankyou/Thank%20You!%20Your%20deatils%20has%20been%20sent%20successfully" target="_blank">This is doodle</a>
+    </div>
+    <div id="visited">
+        <a href="http://127.0.0.1:8000/thankyou/Thank%20You!%20Your%20deatils%20has%20been%20sent%20successfully" target="_blank">This is same doodle</a>
+    </div> -->
+
+    <!-- <div class="container">
+        <h1> hello world</h1>
+    </div> -->
+
+    <!-- <h1> hello world</h1> -->
+
+    <!-- <h1 style="color:red; font-size:50px;">text centre</h1> -->
+   <!-- <h1>external css  css</h1> 
+   <p>element selecteor</p>
+   <p id="p1">element selector 2</p>
+   <h2 class="cent">class selector in h</h2>
+   <p class="cent">class selector in p</p>
+   <p>this is universal selctor</p> -->
+
+   <!-- below section explains about hover effect and seudo selector -->
+   <!-- <div class="hov">
+    hover effect
+   </div> -->
+
+   <!-- below section explains about group selector -->
+   <!-- <h3>this h3 group selvctro</h3>
+   <h4>this is h4 selector</h4>
+   <h5>this is h5 selcetor</h5> -->
+   <!-- <p>this is pargraph</p>
+   <p>this is another style css 
+    when we use internal css all elements like if we are usig css forkne element it appies to lll other elements
+   </p> -->
+    <!-- <h1 style="padding:20px; font-size:50px; background-color:red; color:blue">this is web page</h1> -->
+    <!-- <div class="text-center">
+         <button class="border-0"> click me</button>
+         <button class="border-top-0">  top border 0 click me</button>
+         <button class="border-bottom-0">  bottom border 0 click me</button>
+         <button class="border-left-0">  left border 0 click me</button>
+         <button class="border-right-0">  right border 0 click me</button>
+        </div>
+        <br><br>
+        <div class="text-center">
+            <button class="rounded"> click me</button>
+            <button class="rounded-top">  top rounded 0 click me</button>
+            <button class="rounded-bottom">  bottom rounded 0 click me</button>
+            <button class="rounded-left">  left rounded 0 click me</button>
+            <button class="rounded-right">  right right 0 click me</button>
+           </div>
+           <br> <br>
+           <div class="text-center">
+            <button class="rounded-circle">rounded circle</button>
+            <button class="no-rounded">no rounded</button>
+
+           </div> -->
+   
+    <!-- bootstrap jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
